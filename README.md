@@ -133,7 +133,6 @@ Main libraries include:
 
 ## Installation
 1. Clone the repository
-
 Clone the repository to your local machine:
 
 ```bash
@@ -142,16 +141,14 @@ cd Voxelized_Railway_Ballast_Generation
 ```
 
 2. Create a dedicated Python environment (recommended)
-
 It is recommended to use a clean environment to ensure reproducibility.
-Using conda:
-
 Using conda:
 
 ```bash
 conda create -n ballast python=3.10
 conda activate ballast
 ```
+
 Using virtual environment (alternative):
 
 ```bash
@@ -160,6 +157,13 @@ python -m venv venv
 Windows:
 ```bash
 venv\Scripts\activate
+```
+
+3. Install dependencies
+Install all required Python libraries:
+
+```bash
+pip install -r requirements.txt
 ```
 
 Mac/Linux:

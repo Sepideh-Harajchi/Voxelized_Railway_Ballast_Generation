@@ -165,8 +165,30 @@ Install all required Python libraries:
 ```bash
 pip install -r requirements.txt
 ```
-
 Mac/Linux:
 ```bash
 source venv/bin/activate
 ```
+
+## Notes
+
+- The voxel-based ballast generation workflow is computationally intensive.
+
+- In `Code_1.py`, a total of **147 independent voxelized ballast sub-blocks** are generated.  
+  Each sub-block represents a stochastic realization of ballast particle arrangements within a domain of **0.1 m × 0.1 m × 0.1 m**, using random rotations, translations, and overlap-controlled placement.
+
+- These sub-blocks are subsequently assembled in `Code_2.py` into a structured **7 × 7 × 3 grid**, forming the final heterogeneous ballast domain of **0.7 m × 0.7 m × 0.3 m**.
+
+- The voxel resolution is set to **2 mm**, resulting in high-resolution volumetric models suitable for numerical simulations (e.g., GPR modelling).
+
+- The total runtime depends on:
+  - voxel resolution  
+  - number of particles per layer  
+  - overlap constraints  
+  - number of realizations (default: 147)  
+  - system hardware (CPU and memory)
+
+- Running the full workflow (generation + assembly) may require **significant computational time and memory**, particularly due to voxelization using Delaunay triangulation and repeated stochastic placement.
+
+- It is recommended to test the workflow with a reduced number of iterations before running the full configuration.
+

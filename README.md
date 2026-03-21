@@ -143,11 +143,17 @@ Main libraries include:
 git clone https://github.com/Sepideh-Harajchi/Voxelized_Railway_Ballast_Generation.git
 cd Voxelized_Railway_Ballast_Generation
 
+---
+
 ### Create a dedicated Python environment (recommended)
 
 It is recommended to use a clean environment to ensure reproducibility.
 
 #### Using conda
+
+```bash
+conda create -n ballast python=3.10
+conda activate ballast
 
 ```bash
 conda create -n ballast python=3.10

@@ -152,3 +152,17 @@ Using conda:
 conda create -n ballast python=3.10
 conda activate ballast
 ```
+Using virtual environment (alternative):
+
+```bash
+python -m venv venv
+```
+Windows:
+```bash
+venv\Scripts\activate
+```
+
+Mac/Linux:
+```bash
+source venv/bin/activate
+```

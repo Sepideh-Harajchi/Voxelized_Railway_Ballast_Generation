@@ -1,0 +1,7 @@
+
+    Voxel Grid Report
+    -----------------
+    Total Voxels: 18375000
+    Stone (Filled) Percentage: 48.60%
+    Void (Empty) Percentage: 51.40%
+    

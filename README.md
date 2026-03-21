@@ -131,9 +131,11 @@ Main libraries include:
 
 ---
 
-## Installation
+## Installation and Usage
+
+### Installation
+
 1. Clone the repository
-Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/Sepideh-Harajchi/Voxelized_Railway_Ballast_Generation.git
@@ -141,7 +143,7 @@ cd Voxelized_Railway_Ballast_Generation
 ```
 
 2. Create a dedicated Python environment (recommended)
-It is recommended to use a clean environment to ensure reproducibility.
+
 Using conda:
 
 ```bash
@@ -158,6 +160,10 @@ Windows:
 ```bash
 venv\Scripts\activate
 ```
+Mac/Linux:
+```bash
+source venv/bin/activate
+```
 
 3. Install dependencies
 Install all required Python libraries:
@@ -165,10 +171,36 @@ Install all required Python libraries:
 ```bash
 pip install -r requirements.txt
 ```
-Mac/Linux:
+
+### Usage
+
+4. Run the codes in sequential order
+
+Step 1 — Generate voxelized ballast sub-blocks
+
 ```bash
-source venv/bin/activate
+python Code/Code_1.py
 ```
+This step:
+- loads 3D stone geometries from the Input/ directory
+- applies stochastic rotation and placement
+- generates 147 voxelized ballast sub-blocks
+- saves outputs in the Output/ directory
+
+Step 2 — Assemble the full ballast domain
+```bash
+python Code/Code_2.py
+```
+This step:
+
+- loads generated voxel sub-blocks
+- assembles them into a 7 × 7 × 3 domain
+- applies boundary corrections
+exports:
+- final voxel model (.h5)
+- 2D visualization (.png)
+- statistical report (.txt)
+
 
 ## Notes
 

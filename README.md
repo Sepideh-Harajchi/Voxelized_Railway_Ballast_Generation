@@ -143,11 +143,14 @@ Main libraries include:
 git clone https://github.com/Sepideh-Harajchi/Voxelized_Railway_Ballast_Generation.git
 cd Voxelized_Railway_Ballast_Generation
 
-Create a dedicated Python environment (recommended)
-Using conda:
+### Create a dedicated Python environment (recommended)
+### Using conda:
+```bash
 conda create -n ballast python=3.10
 conda activate ballast
-Using virtual environment (alternative):
+
+### Using virtual environment (alternative):
+```bash
 python -m venv venv
 
 # Windows
@@ -155,13 +158,18 @@ venv\Scripts\activate
 
 # Mac/Linux
 source venv/bin/activate
-Install dependencies
+
+
+### Install dependencies
+```bash
 pip install -r requirements.txt
-Running the workflow
+
+### Running the workflow
 
 The workflow must be executed in sequential order:
 
-Step 1 — Generate voxelized ballast sub-blocks
+### Step 1 — Generate voxelized ballast sub-blocks
+```bash
 python Code/Code_1.py
 
 This step:

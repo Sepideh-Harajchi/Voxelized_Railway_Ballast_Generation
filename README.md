@@ -128,3 +128,71 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/Sepideh-Harajchi/Voxelized_Railway_Ballast_Generation.git
+
+Navigate to the repository:
+
+cd Voxelized_Railway_Ballast_Generation
+
+(Optional) Create a virtual environment:
+
+python -m venv venv
+
+Activate the virtual environment:
+
+Windows:
+
+venv\Scripts\activate
+
+Mac/Linux:
+
+source venv/bin/activate
+
+Install dependencies:
+
+pip install -r requirements.txt
+Usage
+Step 1 – Generate ballast voxel sub-blocks
+python Code/Code_1.py
+
+This step:
+
+generates 147 voxelized ballast sub-blocks
+stores outputs in the Output directory
+Step 2 – Assemble the final ballast model
+python Code/Code_2.py
+
+This step:
+
+assembles the final heterogeneous ballast domain
+produces visualization and final datasets
+Reproducibility
+
+This repository provides the workflow used in the associated manuscript.
+
+Results are reproducible given the same:
+
+input geometries
+voxel resolution
+model parameters
+
+Note: stochastic placement introduces slight variations unless random seeds are fixed.
+
+Notes
+Intended for numerical GPR simulations
+Computational cost depends on voxel resolution and model size
+Example outputs are included for reproducibility
+Data
+Input data
+.obj stone geometries in Input
+Generated data
+
+Stored in Output:
+
+voxel grids (.pkl)
+HDF5 datasets (.h5)
+projection images (.png)
+visualizations (.png)
+reports (.txt)
+License
+
+MIT License

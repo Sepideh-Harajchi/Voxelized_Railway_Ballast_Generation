@@ -135,7 +135,7 @@ Main libraries include:
 
 ---
 
-## Installation
+## Installation and Usage
 
 ### Clone the repository
 
@@ -143,82 +143,5 @@ Main libraries include:
 git clone https://github.com/Sepideh-Harajchi/Voxelized_Railway_Ballast_Generation.git
 cd Voxelized_Railway_Ballast_Generation
 
-### Create a dedicated Python environment (recommended)
-### Using conda:
-```bash
-conda create -n ballast python=3.10
-conda activate ballast
+---
 
-### Using virtual environment (alternative):
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# Mac/Linux
-source venv/bin/activate
-
-
-### Install dependencies
-```bash
-pip install -r requirements.txt
-
-### Running the workflow
-
-The workflow must be executed in sequential order:
-
-### Step 1 — Generate voxelized ballast sub-blocks
-```bash
-python Code/Code_1.py
-
-This step:
-
-loads 3D stone geometries from the Input/ directory
-applies stochastic rotation and placement
-generates 147 voxelized ballast sub-blocks
-saves outputs in the Output/ directory
-Step 2 — Assemble the full ballast domain
-python Code/Code_2.py
-
-This step:
-
-loads generated voxel sub-blocks
-assembles them into a 7 × 7 × 3 domain
-applies boundary corrections
-exports:
-final voxel model (.h5)
-2D visualization (.png)
-statistical report (.txt)
-Notes
-The generated models represent heterogeneous railway ballast structures suitable for GPR simulations
-Computational cost depends on:
-voxel resolution
-domain size
-The workflow is fully reproducible given the same input geometries
-Data
-
-Input geometries are stored in:
-
-Input/*.obj
-
-Generated outputs are stored in:
-
-Output/
-
-Including:
-
-voxel grids (.h5)
-visualizations (.png)
-reports (.txt)
-Output characteristics
-Sub-block size: 0.1 × 0.1 × 0.1 m
-Final domain size: 0.7 × 0.7 × 0.3 m
-Voxel resolution: 2 mm
-Applications
-
-The generated voxel models can be directly used in:
-
-GPR simulations (e.g., gprMax)
-Numerical electromagnetic modelling
-Heterogeneous media analysis

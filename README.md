@@ -155,7 +155,3 @@ It is recommended to use a clean environment to ensure reproducibility.
 conda create -n ballast python=3.10
 conda activate ballast
 
-```bash
-conda create -n ballast python=3.10
-conda activate ballast
-

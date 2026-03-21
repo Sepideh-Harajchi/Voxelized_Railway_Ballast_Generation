@@ -135,11 +135,10 @@ Main libraries include:
 
 ---
 
----
 
-### Install dependencies
+## Install dependencies
 
-Install all required Python libraries:
+### Install all required Python libraries:
 
 ```bash
 pip install -r requirements.txt
@@ -148,7 +147,7 @@ pip install -r requirements.txt
 conda create -n ballast python=3.10
 conda activate ballast
 
-Running the workflow
+### Running the workflow
 
 Run the scripts in sequential order.
 

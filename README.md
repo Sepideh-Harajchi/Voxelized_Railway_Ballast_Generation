@@ -136,19 +136,12 @@ Main libraries include:
 ---
 
 
-## Install dependencies
+## Installation and Usage
 
-### Install all required Python libraries:
+### Installation
+
+1. Clone the repository
 
 ```bash
-pip install -r requirements.txt
-
-```bash
-conda create -n ballast python=3.10
-conda activate ballast
-
-### Running the workflow
-
-Run the scripts in sequential order.
-
-Step 1 — Generate voxelized ballast sub-blocks
+git clone https://github.com/Sepideh-Harajchi/Voxelized_Railway_Ballast_Generation.git
+cd Voxelized_Railway_Ballast_Generation

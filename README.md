@@ -133,7 +133,7 @@ Example of a generated ballast sub-block with coloured particles, illustrating s
 
 2D projection (x–y plane with z as depth) showing the spatial distribution and density of occupied voxels within a single generated sub-block.
 
-![2D projection of sub-block](Output/Output/Code1_sample_outputs/systematic_voxel_projection_iteration_1_z_3.png)
+![2D projection of sub-block](Output/Code1_sample_outputs/systematic_voxel_projection_iteration_1_z_3.png)
 
 ---
 
@@ -142,7 +142,7 @@ Example of a generated ballast sub-block with coloured particles, illustrating s
 2D projection of the full assembled voxel domain (0.7 m × 0.7 m × 0.3 m), constructed from 147 sub-blocks.  
 This representation highlights the large-scale heterogeneity and spatial variability of the ballast structure.
 
-![Final assembled ballast domain](Output/Output/Code2_sample_outputs/combined_voxel_2d_colored_boundary_xy_z_depth.png)
+![Final assembled ballast domain](Output/Code2_sample_outputs/combined_voxel_2d_colored_boundary_xy_z_depth.png)
 
 
 ---

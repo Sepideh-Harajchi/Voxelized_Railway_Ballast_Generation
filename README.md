@@ -12,7 +12,7 @@ This repository accompanies the manuscript:
 
 **Numerical investigation of GPR performance over voxelized heterogeneous railway ballast: influence of layer composition and antenna frequency**
 
-submitted to *Computers & Geosciences*.
+submitted to the *Journal of Applied Geophysics*.
 
 ---
 

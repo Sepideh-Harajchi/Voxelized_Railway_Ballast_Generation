@@ -1,0 +1,10 @@
+Iteration Report
+================
+
+Iteration 1
+----------
+Z-level 0 - 0.025: Max Overlap: 114, Min Overlap: 0, Filled Fraction: 0.5952
+Z-level 0.025 - 0.05: Max Overlap: 47, Min Overlap: 0, Filled Fraction: 0.5294
+Z-level 0.05 - 0.075: Max Overlap: 106, Min Overlap: 0, Filled Fraction: 0.5925
+Z-level 0.075 - 0.1: Max Overlap: 126, Min Overlap: 0, Filled Fraction: 0.5425
+

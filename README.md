@@ -164,11 +164,11 @@ Example heterogeneous simulation models are shown below.
 
 #### 1 GHz heterogeneous ballast model (SH0)
 
-![1 GHz heterogeneous model](gprMax/1GHz/heterogeneous/SH0/sample.png)
+![1 GHz heterogeneous model](gprMax/1GHz/heterogeneous/SH0/fig15.png)
 
 #### 400 MHz heterogeneous ballast model (SH2L)
 
-![400 MHz heterogeneous model](gprMax/400MHz/heterogeneous/SH2L/sample.png)
+![400 MHz heterogeneous model](gprMax/400MHz/heterogeneous/SH2L/fig20.png)
 
 ---
 
